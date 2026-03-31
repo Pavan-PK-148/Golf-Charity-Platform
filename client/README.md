@@ -1,16 +1,56 @@
-# React + Vite
+⛳️ ImpactGolf | Elite Protocol
+Play for Purpose. Win for Change. ImpactGolf is a premium subscription platform where golf performance meets global philanthropy. Our "Rolling 5" logic tracks Stableford scores to enter players into automated, transparent prize draws, with 10% of all fees fueling verified charities.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+⚡️ Visual Interface
+Desktop Experience
+The high-fidelity terminal designed for global oversight.
 
-Currently, two official plugins are available:
+Mobile Responsive Command Center
+Fully optimized "Elite Protocol" UI that scales perfectly across all devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+<img src="" width="300" alt="Mobile Admin Terminal">
+<img src="" width="300" alt="Mobile Landing Page">
+</p>
 
-## React Compiler
+🛠 Operational Workflow
+Auth & Align: Securely link profiles and select a primary charity partner.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Data Ingest: Log Stableford scores via the "Rolling 5" engine.
 
-## Expanding the ESLint configuration
+Draw Entry: Automated monthly entry for active elite subscribers.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Impact Lock: Winners trigger instant 10% charity distributions.
+
+🚀 Tech Stack
+Frontend: React.js with Vite
+
+Styling: Tailwind CSS (Custom "Cyberpunk" configuration)
+
+Animations: Framer Motion for high-end protocol transitions
+
+Icons: Lucide-React
+
+Backend/Auth: Supabase (PostgreSQL & Email Providers)
+
+Deployment: Vercel
+
+🔧 Installation & Local Setup
+Bash
+# Clone the repository
+git clone https://github.com/Pavan-PK-148/Golf-Charity-Platform.git
+
+# Navigate to the client directory
+cd client
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+🔐 System Protocols
+Identity Verification: Robust admin dashboard for manual prize verification.
+
+Rate Limiting: Stability protection against system abuse.
+
+Secure Auth: Multi-layered password and email verification protocols.
