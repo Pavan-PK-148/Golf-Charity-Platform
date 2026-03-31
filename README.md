@@ -9,8 +9,15 @@ Mobile Responsive Command Center
 Fully optimized "Elite Protocol" UI that scales perfectly across all devices.
 
 <p align="center">
-<img src="" width="300" alt="Mobile Admin Terminal">
-<img src="" width="300" alt="Mobile Landing Page">
+
+Landing page
+<img width="1512" height="908" alt="Screenshot 2026-03-31 at 6 25 34 PM" src="https://github.com/user-attachments/assets/67fd3e2b-2606-4031-960a-afd25d9f4eaf" />
+
+User Dashboard
+<img width="1512" height="910" alt="Screenshot 2026-03-31 at 6 26 10 PM" src="https://github.com/user-attachments/assets/5c649dba-5988-4bdc-bb27-cf20411a46ef" />
+
+Admin Dashboard
+<img width="1511" height="907" alt="Screenshot 2026-03-31 at 6 26 49 PM" src="https://github.com/user-attachments/assets/d042b6a7-2eb8-453b-97ad-ca6b70a6286f" />
 </p>
 
 🛠 Operational Workflow
@@ -54,3 +61,5 @@ Identity Verification: Robust admin dashboard for manual prize verification.
 Rate Limiting: Stability protection against system abuse.
 
 Secure Auth: Multi-layered password and email verification protocols.
+
+Developed by Pavan Kalyan Srinivas Robba
