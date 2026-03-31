@@ -28,51 +28,60 @@ export default function Landing() {
         <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-yellow-600/5 blur-[120px] rounded-full" />
       </div>
 
-      <nav className="relative z-10 flex justify-between items-center px-8 py-8 max-w-7xl mx-auto">
-        <div className="flex items-center gap-2">
-          <div className="bg-yellow-500 p-2 rounded-lg">
-            <Target className="text-slate-900" size={24} strokeWidth={3} />
-          </div>
-          <span className="text-2xl font-black uppercase tracking-tighter italic">Impact<span className="text-yellow-500">Golf</span></span>
-        </div>
-
-        <button 
-  onClick={() => navigate('/auth')}
-  className="group relative px-10 py-4 rounded-full overflow-hidden transition-all duration-500 cursor-pointer border border-white/20 bg-[#020617] shadow-[0_0_15px_rgba(234,179,8,0.1)] hover:shadow-[0_0_30px_rgba(234,179,8,0.3)] hover:border-yellow-500/60"
->
-  {/* Layer 1: Moving Background Gradient */}
-  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-500/5 to-transparent -translate-x-[100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
-
-  {/* Layer 2: Subtle Grid Overlay */}
-  <div className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] pointer-events-none transition-opacity" 
-       style={{ backgroundImage: `linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)`, size: '10px 10px', backgroundSize: '10px 10px' }} />
-
-  {/* Layer 3: Corner Accents (Cyberpunk style) */}
-  <div className="absolute top-0 left-4 w-4 h-[2px] bg-yellow-500/0 group-hover:bg-yellow-500 transition-all duration-300" />
-  <div className="absolute bottom-0 right-4 w-4 h-[2px] bg-yellow-500/0 group-hover:bg-yellow-500 transition-all duration-300" />
-
-  {/* Button Content */}
-  <div className="relative flex items-center gap-4">
-    {/* Scanning Dot */}
-    <div className="relative flex h-2 w-2">
-      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
-      <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"></span>
+      <nav className="relative z-10 flex flex-row justify-between items-center px-4 sm:px-8 py-6 md:py-8 max-w-7xl mx-auto w-full">
+  {/* Brand Logo - Responsive sizing */}
+  <div className="flex items-center gap-2 shrink-0">
+    <div className="bg-yellow-500 p-1.5 md:p-2 rounded-lg">
+      <Target className="text-slate-900 w-5 h-5 md:w-6 md:h-6" strokeWidth={3} />
     </div>
-
-    <span className="text-[11px] font-black uppercase tracking-[0.4em] text-slate-300 group-hover:text-white transition-all duration-300">
-      Player <span className="text-yellow-500 group-hover:drop-shadow-[0_0_10px_#eab308]">Login</span>
+    <span className="text-lg md:text-2xl font-black uppercase tracking-tighter italic">
+      Impact<span className="text-yellow-500">Golf</span>
     </span>
-
-    {/* Right Arrow that appears on hover */}
-    <div className="overflow-hidden w-0 group-hover:w-4 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
-      <ChevronRight size={16} className="text-yellow-500" />
-    </div>
   </div>
 
-  {/* Layer 4: Interactive Glow Follow (Mouse light) */}
-  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_var(--x,_50%)_var(--y,_50%),_rgba(234,179,8,0.15)_0%,_transparent_50%)]" />
-</button>
-      </nav>
+  {/* Cyberpunk Button - Enhanced with Responsive Padding & Font Scale */}
+  <button 
+    onClick={() => navigate('/auth')}
+    className="group relative px-5 sm:px-10 py-3 md:py-4 rounded-full overflow-hidden transition-all duration-500 cursor-pointer border border-white/20 bg-[#020617] shadow-[0_0_15px_rgba(234,179,8,0.1)] hover:shadow-[0_0_30px_rgba(234,179,8,0.3)] hover:border-yellow-500/60 flex-shrink-0"
+  >
+    {/* Layer 1: Moving Background Gradient - Restored */}
+    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-500/5 to-transparent -translate-x-[100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out" />
+
+    {/* Layer 2: Subtle Grid Overlay - Restored */}
+    <div 
+      className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] pointer-events-none transition-opacity" 
+      style={{ 
+        backgroundImage: `linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)`, 
+        backgroundSize: '10px 10px' 
+      }} 
+    />
+
+    {/* Layer 3: Corner Accents - Restored */}
+    <div className="absolute top-0 left-4 w-4 h-[2px] bg-yellow-500/0 group-hover:bg-yellow-500 transition-all duration-300" />
+    <div className="absolute bottom-0 right-4 w-4 h-[2px] bg-yellow-500/0 group-hover:bg-yellow-500 transition-all duration-300" />
+
+    {/* Button Content */}
+    <div className="relative flex items-center gap-2 md:gap-4">
+      {/* Scanning Dot - Essential for Elite UI */}
+      <div className="relative flex h-1.5 w-1.5 md:h-2 md:w-2">
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+        <span className="relative inline-flex rounded-full h-1.5 w-1.5 md:h-2 md:w-2 bg-yellow-500"></span>
+      </div>
+
+      <span className="text-[9px] md:text-[11px] font-black uppercase tracking-[0.2em] md:tracking-[0.4em] text-slate-300 group-hover:text-white transition-all duration-300 whitespace-nowrap">
+        Player <span className="text-yellow-500 group-hover:drop-shadow-[0_0_10px_#eab308]">Login</span>
+      </span>
+
+      {/* Right Arrow - Hover animation preserved */}
+      <div className="hidden sm:block overflow-hidden w-0 group-hover:w-4 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100">
+        <ChevronRight size={16} className="text-yellow-500" />
+      </div>
+    </div>
+
+    {/* Layer 4: Interactive Glow - Restored */}
+    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_var(--x,50%)_var(--y,50%),rgba(234,179,8,0.15)_0%,transparent_50%)]" />
+  </button>
+</nav>
 
       {/* Hero Section */}
       <section className="relative z-10 min-h-[85vh] flex items-center justify-center pt-20 pb-40 px-4">
@@ -133,7 +142,7 @@ export default function Landing() {
         </motion.div>
       </section>
 
-      <section className="relative z-10 py-32 overflow-hidden">
+      <section className="relative z-10 py-15 lg:py-32 overflow-hidden">
   {/* Background Glow Orbs for the Section */}
   <div className="absolute top-1/2 left-0 w-96 h-96 bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
   <div className="absolute bottom-0 right-0 w-96 h-96 bg-yellow-500/5 blur-[120px] rounded-full pointer-events-none" />
